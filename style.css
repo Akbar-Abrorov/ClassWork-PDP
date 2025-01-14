@@ -1,28 +1,8 @@
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-.header {
-    background-color: blue;
-    color: white;
-    height: 100px;
-}
-
-.ul {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    list-style: none;
-    font-size: 20px;
-}
-
-.ota {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   padding: 30px 100px 0 0;
 }
 
 .container {
@@ -32,7 +12,73 @@
 }
 
 
-.li3 {
+.site-header {
+    background-color: blue;
+    color: white;
+    height: 100px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px 0 0;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo-image {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-image: url(./home\ \(1\).png);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav-item {
+    color: white;
+}
+
+
+.main-section {
+    margin-top: 20px;
+}
+
+.content-list {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.content-item {
+    flex: 1;
+}
+
+.sub-list {
+    list-style: none;
+}
+
+.sub-item {
     width: 300px;
     height: 30px;
     background-color: rgb(0, 0, 123);
@@ -42,119 +88,86 @@
     font-size: 20px;
 }
 
-ul {
-    list-style: none;
+.info-box {
+    margin-top: 20px;
 }
 
-.as {
+.section-title {
     color: blue;
+    margin-bottom: 10px;
 }
 
-.ul2 {
-    display: flex;
-    margin-top: 20px;
-    gap: 20px;
+.description {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.li_3 {
-    background-color: blue;
-    text-align: center;
-    color: white;
-    background-color: rgb(0, 0, 123);
+.side-content {
     width: 300px;
-}
-
-.h2 {
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
     text-align: center;
+    background-color: rgb(0, 0, 123);
+    color: white;
+}
+
+.side-title {
+    margin: 20px 0;
+}
+
+.side-description {
+    margin-bottom: 20px;
 }
 
 
-
-.footer {
+.site-footer {
     background-color: blue;
     color: white;
     text-align: center;
-height: 110px;
-padding: 40px;
-margin-top: 100px;
+    height: 110px;
+    padding: 40px;
+    margin-top: 100px;
 }
 
-.div {
-    margin-top: 20px;
-}
-
-.img {
-    width: 10px;
-    height: 10px;
-    background-image: url(./home\ \(1\).png);
-    display: none;
-}
-.li4 {
-    display: flex;
-    gap: 20px;
-}
-@media(max-width: 600px) {
-.ul2 {
-    display: block;
-
-}
-
-.ota {
-display: block;
-text-align: center;
-}
-
-.ul {
- flex-wrap: wrap;
- text-align: center;
-margin-left: 70px;
-}
-
-.header {
-    height: 100px;
-}
-.li_3 {
-    padding: 10px;
-    width: 100% ;
-}
-
-.li3 {
-    width: 100%;
+.footer-title {
+    font-size: 18px;
 }
 
 
-.img {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin-left: 200px;
-    background-image: url(./home\ \(1\).png);
+@media (max-width: 800px) {
+    .content-list {
+        display: block;
+    }
 }
 
-.ul {
-  display: none;
-}
+@media (max-width: 600px) {
+    .header-content {
+        display: block;
+        text-align: center;
+    }
 
-.ota2 {
-    display: flex;
-  justify-content: space-evenly
-}
+    .nav-list {
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 70px;
+        display: none;
+    }
 
-.li4 {
-display: block;
-}
+    .logo-image {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-left: 200px;
+    }
 
-}
+    .side-content {
+        padding: 10px;
+        width: 100%;
+    }
 
+    .sub-item {
+        width: 100%;
+    }
 
-
-@media(max-width: 800px) {
-
-
-.ul2 {
-    display: block;
-}
+    .content-wrapper {
+        display: block;
+    }
 }
